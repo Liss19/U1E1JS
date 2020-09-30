@@ -2,7 +2,7 @@ const fs = require('fs');
 var oracion = 'Hola mi nombre es Brenda';
 var arro = oracion.split(" ");
 var texto;
-texto = fs.readFileSync('../texto.txt', 'utf-8', (error, data) => {
+texto = fs.readFileSync('texto.txt', 'utf-8', (error, data) => {
     if (error) {
         console.log(`Error ${error}`);
     } else {
